@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="qrcode" />
+            <item index="1" class="java.lang.String" itemvalue="web3" />
+            <item index="2" class="java.lang.String" itemvalue="google-cloud" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="core.views_mobile_core.translation" />
+          <option value="dict.late" />
+          <option value="django.db.models.fields.IntegerField.__sub__" />
+          <option value="staking.models.StakingObjects.objects" />
+          <option value="staking.models.KNFTStaking.objects" />
+          <option value="staking.models.StakingOptionObjects.objects" />
+          <option value="Kstar_admin.models.StakingError.objects" />
+          <option value="core.models.OwnerWallet.objects" />
+          <option value="core.models.TokenInformation.objects" />
+          <option value="Kstar_admin.models.ServerInspection.objects" />
+          <option value="staking.models.StakingTransactionHistory.objects" />
+          <option value="core.models.ScanToOwnerHistory.objects" />
+          <option value="Kstar_admin.models.AdminDoError.objects" />
+          <option value="nft.models.NftToken.objects" />
+          <option value="core.models.Transaction721History.objects" />
+          <option value="core.models.Transaction20History.objects" />
+          <option value="nft.models.PendingToken.objects" />
+          <option value="nft.models.InTheBoxToken.objects" />
+          <option value="Kstar_admin.models.ScheduleResult.objects" />
+          <option value="Kstar_admin.models.AdminDoError.obejcts" />
+          <option value="nft.models.PayNotNFTList.objects" />
+          <option value="nft.models.GatchaNftList.objects" />
+          <option value="Kstar_admin.models.NFTError.objects" />
+          <option value="users.models.user_icon.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
