@@ -3,7 +3,9 @@
         <h1 class="pragmatic_logo">Pragmatic</h1>
     </div>
     <div>
-        <span>nav1</span>
+        <a href="{% url 'articleapp:list' %}?next={{ request.path }}">
+            <span>Articles</span>
+        </a>
         <span>nav2</span>
         <span>nav3</span>
 
@@ -11,14 +13,14 @@
         <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
             <span>login</span>
         </a>
-        <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
+        <a href="{% url 'accountapp:create' %}?next={{ request.path }}">
             <span>SignUp</span>
         </a>
         {% else %}
         <a href="{% url 'accountapp:detail' pk=user.pk %}">
             <span>MyPage</span>
         </a>
-        <a href="{% url 'accountapp:logout' %}?next={{ request.path }}">
+        <a href="{% url 'accountapp:logout' %}">
             <span>logout</span>
         </a>
         {% endif %}
