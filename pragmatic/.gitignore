@@ -79,5 +79,5 @@ fabric.properties
 db.sqlite3
 .env
 **/migrations
-
+media
 __pycache__/
