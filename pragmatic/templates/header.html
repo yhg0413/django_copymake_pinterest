@@ -20,7 +20,7 @@
         <a href="{% url 'accountapp:detail' pk=user.pk %}">
             <span>MyPage</span>
         </a>
-        <a href="{% url 'accountapp:logout' %}">
+        <a href="{% url 'accountapp:logout' %}?next={% url 'accountapp:login' %}">
             <span>logout</span>
         </a>
         {% endif %}
