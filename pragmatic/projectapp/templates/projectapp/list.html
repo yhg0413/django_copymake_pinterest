@@ -8,10 +8,6 @@
       padding: 0;
       margin: 0, auto;
     }
-    .container a{
-      width: 45%;
-      max-width: 250px;
-    }
     .container div {
       display: flex;
       justify-content: center;
@@ -19,34 +15,37 @@
 
       border-radius: 1rem;
     }
-
     .container img{
-      width : 100%;
+      width : 7rem;
+      height : 7rem;
+      object-fit: cover;
       border-radius: 1rem;
     }
 </style>
-{% if article_list %}
+{% if project_list %}
 <div class="container">
-  {% for article in article_list %}
-  <a href="{% url 'articleapp:detail' article.pk %}">
-    {% include 'articleapp/snippets/card.html' with articel=article %}
+  {% for project in project_list %}
+  <a href="{% url 'projectapp:detail' project.pk %}">
+    {% include 'projectapp/snippets/card.html' with articel=article %}
   </a>
+
   {% endfor %}
+
   <script src="{% static 'js/magicgrid.js' %}"></script>
 </div>
 {% else %}
 <div class="text-center">
   <h1>
-    No Articles YET!
+    No Project YET!
   </h1>
 </div>
 {% endif %}
 
-{% include 'articleapp/snippets/pagination.html' with page_obj=page_obj %}
+{% include 'projectapp/snippets/pagination.html' with page_obj=page_obj %}
 
 <div style="text-align: center;">
-  <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill px-3 mt-3 mb-3">
-    Create Article
+  <a href="{% url 'projectapp:create' %}" class="btn btn-dark rounded-pill px-3 mt-3 mb-3">
+    Create Project
   </a>
 </div>
 
