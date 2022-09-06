@@ -10,3 +10,6 @@ class Project(models.Model):
     image = models.ImageField('배너이미지', upload_to='project/banner/', null=False)
 
     created_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
