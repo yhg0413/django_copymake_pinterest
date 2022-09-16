@@ -81,3 +81,5 @@ db.sqlite3
 media
 __pycache__/
 Dockerfile
+pragmatic_aws_key.pem
+nginx.conf
