@@ -83,3 +83,4 @@ __pycache__/
 Dockerfile
 pragmatic_aws_key.pem
 nginx.conf
+test_key.pem
