@@ -11,3 +11,13 @@ class Article(models.Model):
     content = models.TextField(null=True)
 
     created_at = models.DateField(auto_now_add = True, null=True)
+
+    like = models.IntegerField(default=0)
+
+
+class LikeRecord(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE,related_name='like_record')
+    article = models.ForeignKey(Article, on_delete=models.CASCADE,related_name='like_record')
+
+    class Meta:
+        unique_together = ('user','article')
