@@ -21,8 +21,6 @@ has_ownership = [
 # Create your views here.
 
 
-
-
 # Create your models here.
 
 class AccountCreateView(CreateView):
